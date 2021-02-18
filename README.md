@@ -15,4 +15,13 @@ Only 1 element can be "hidden" at any given time for any user. Example:
 If the first user has its name "hidden", then it is not possible to "hide" the last name or email until the name is "shown"
 If the first user has its last name "hidden", then it is not possible to "hide" the name or email until the last name is "shown"
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------
+
+LOCAL_STORAGE.html
+
+- When the user saves an item the id of the item is also stored in localStorage. The id is automatically generated (Math.random())
+- Since the item is not only a name anymore, I suggest you use JSON objects for it.
+{"id":12212, "name":"THE NAME YOU GIVE TO IT"}
+- localStorage that has text that looks like an array with JSON objects in it
+- When the objects are rendered, the id is also shown
+- When the user clicks on "delete item", then item is deleted from the website and also from localStorage. You will need a loop and an if statement to compare the id of the element with the id of localStorage
