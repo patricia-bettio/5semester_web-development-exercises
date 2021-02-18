@@ -31,27 +31,27 @@
     <script>
 
         document.querySelectorAll("#usersSection div").forEach((singleSection) => {
-            console.log(singleSection)
+            // console.log(singleSection)
             singleSection.querySelectorAll("button").forEach((singleBtn) => {
                 // console.log(singleBtn)
                 singleBtn.addEventListener("click", enableBtn => {
-                    console.log("clicked")
+                    // console.log("clicked")
                     let previousElement = singleBtn.previousElementSibling;
                     let elementsBlurred = singleSection.querySelectorAll(".blur");
                     if (elementsBlurred.length > 0) {
                         // console.log("class exists!")
-                        console.log(previousElement.id)
+                        // console.log(previousElement.id)
                         document.querySelector(".error").classList.add("showError")
                         let repeated = elementsBlurred[0].id;
-                        console.log(repeated)
+                        // console.log(repeated)
                         if (previousElement.id == repeated) {
                             previousElement.classList.toggle("blur");
                             document.querySelector(".error").classList.remove("showError")
                         }
                     } else {
                         document.querySelector(".error").classList.remove("showError")
-                        console.log("none is blurred!")
-                        console.log(previousElement)
+                        // console.log("none is blurred!")
+                        // console.log(previousElement)
                         previousElement.classList.toggle("blur");
                     }
                 });
