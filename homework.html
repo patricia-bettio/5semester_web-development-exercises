@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homework.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="error">For a single user: You can only disable/enable one field at a time!</div>
+    <section id="usersSection">
+         <div id="userOne">
+            <p id="firstName">Paul</p> <button>show/ hide</button>
+            <p id="lastName">Maccartney</p> <button>show/ hide</button>
+            <p id="email">paul@gmail.com</p> <button>show/ hide</button>
+        </div>
+        <div id="userTwo">
+            <p id="firstName">Ringo</p> <button>show/ hide</button>
+            <p id="lastName">Star</p> <button>show/ hide</button>
+            <p id="email">ringo@gmail.com</p> <button>show/ hide</button>
+        </div>
+        <div id="userThree">
+            <p id="firstName">Elton</p> <button>show/ hide</button>
+            <p id="lastName">John</p> <button>show/ hide</button>
+            <p id="email">elton@gmail.com</p> <button>show/ hide</button>
+        </div>
+    </section>
+    
+    <script>
+
+        document.querySelectorAll("#usersSection div").forEach((singleSection) => {
+            console.log(singleSection)
+            singleSection.querySelectorAll("button").forEach((singleBtn) => {
+                // console.log(singleBtn)
+                singleBtn.addEventListener("click", enableBtn => {
+                    console.log("clicked")
+                    let previousElement = singleBtn.previousElementSibling;
+                    let elementsBlurred = singleSection.querySelectorAll(".blur");
+                    if (elementsBlurred.length > 0) {
+                        // console.log("class exists!")
+                        console.log(previousElement.id)
+                        document.querySelector(".error").classList.add("showError")
+                        let repeated = elementsBlurred[0].id;
+                        console.log(repeated)
+                        if (previousElement.id == repeated) {
+                            previousElement.classList.toggle("blur");
+                            document.querySelector(".error").classList.remove("showError")
+                        }
+                    } else {
+                        document.querySelector(".error").classList.remove("showError")
+                        console.log("none is blurred    !")
+                        console.log(previousElement)
+                        previousElement.classList.toggle("blur");
+                    }
+                });
+            })
+        })          
+
+    </script>
+</body>
+</html>

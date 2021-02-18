@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const students = [["a", "aa", 1], ["b", "bb", 2], ["c", "cc", 3]];
+// for all
+  students.forEach((oneStudent) => {
+    console.log(oneStudent)
+    for(let i = 0; i < oneStudent.length; i++){
+          console.log("Hi, my name is " + oneStudent[0] + " and I am " + oneStudent[2] + " years old.");
+        }
+  })
+// for C only
+  const lastStudent = students.pop();
+  for(let i = 0; i < lastStudent.length; i++){
+        console.log("Hi, my name is " + lastStudent[0] + " and I am " + lastStudent[2] + " years old.");
+  }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+#usersSection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    border: 1px solid blue;
+}
+
+p {
+    padding: 4px;
+}
+
+button {
+    margin: 7px 14px;
+}
+
+.blur {
+    color: lightgray;
+}
+
+.error {
+    display: none;
+}
+
+.showError {
+    display: block;
+    color: green;
+}
