@@ -1,0 +1,20 @@
+#formSection {
+    display: flex;
+    place-content: center;
+    padding: 20px;
+}
+
+#items {
+    display: inline-grid;
+}
+
+.item {
+    border: 1px black solid;
+    padding: 15px;
+    display: inline-flex;
+    place-content: space-around;
+}
+
+.item > div {
+    padding: 15px;
+}
