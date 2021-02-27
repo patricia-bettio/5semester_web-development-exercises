@@ -25,3 +25,12 @@ LOCAL_STORAGE.html
 - localStorage that has text that looks like an array with JSON objects in it
 - When the objects are rendered, the id is also shown
 - When the user clicks on "delete item", then item is deleted from the website and also from localStorage. You will need a loop and an if statement to compare the id of the element with the id of localStorage
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+SIGNUP.html
+
+Validate the form and  make sure that the given password and the confirm password are the same.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
