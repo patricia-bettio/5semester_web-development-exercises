@@ -55,13 +55,13 @@ Create a traffic light using functions and setInterval/setTimeOut:
 FORM.HTML
 
 Create a system that uses javascript objects with functions in it. For example:
- a- Create a form with name, last name, email, and password…
- b- there is a button to sign up.
- c- When the use clicks on that button, the data is saved in a json object that is pushed to an array
- d- the system is coded with javascript objects - functions in objects
- e- the system only uses let and const variables - NOT var
- f- the data is validated before it is pushed to the array
- g- when the data is pushed, the newly created user appears in the DOM
+ - Create a form with name, last name, email, and password…
+ - there is a button to sign up.
+ - When the use clicks on that button, the data is saved in a json object that is pushed to an array
+ - the system is coded with javascript objects - functions in objects
+ - the system only uses let and const variables - NOT var
+ - the data is validated before it is pushed to the array
+ - when the data is pushed, the newly created user appears in the DOM
 
  ---------------------------------------------------------------------------------------------------------------------------------------
  
