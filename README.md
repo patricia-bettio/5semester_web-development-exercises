@@ -28,7 +28,7 @@ LOCAL_STORAGE.html
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
-SIGNUP.html
+AUTHENTICATE.html
 
 Validate the form and  make sure that the given password and the confirm password are the same.
 
@@ -51,3 +51,17 @@ Create a traffic light using functions and setInterval/setTimeOut:
  2 sec: white, yellow, white
 
 ----------------------------------------------------------------------------------------------------------------------------------------
+
+FORM.HTML
+
+Create a system that uses javascript objects with functions in it. For example:
+ a- Create a form with name, last name, email, and password…
+ b- there is a button to sign up.
+ c- When the use clicks on that button, the data is saved in a json object that is pushed to an array
+ d- the system is coded with javascript objects - functions in objects
+ e- the system only uses let and const variables - NOT var
+ f- the data is validated before it is pushed to the array
+ g- when the data is pushed, the newly created user appears in the DOM
+
+ ---------------------------------------------------------------------------------------------------------------------------------------
+ 

@@ -1,0 +1,22 @@
+.error{
+  background: rgba(255, 0, 0, 0.5);
+}
+.soft{
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.invalid {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.userArea {
+  border: 1px solid black;
+  display: inline-block;
+  margin: 10px;
+  padding: 15px;
+}
