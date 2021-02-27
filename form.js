@@ -68,7 +68,7 @@ function validForm(){
       password: all("[data-validate]")[3].value
     }
     allUsers.push(newUser);
-    console.log("new Arrey: ", allUsers)
+    console.log("new Array: ", allUsers)
     addNewUser(newUser);
   }
 }
