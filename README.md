@@ -34,3 +34,20 @@ Validate the form and  make sure that the given password and the confirm passwor
 
 ----------------------------------------------------------------------------------------------------------------------------------------
 
+SETTIMEOUT.html
+setTimeout(expression, timeout); runs the code/function once after the timeout.
+
+SETINTERVAL.html
+setInterval(expression, timeout); runs the code/function in intervals, with the length of the timeout between them.
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+TRAFFIC_LIGHT.html
+
+Create a traffic light using functions and setInterval/setTimeOut:
+ 5 sec: red, null, white
+ 2 sec: red, yellow, white
+ 5 sec: white, white, green
+ 2 sec: white, yellow, white
+
+----------------------------------------------------------------------------------------------------------------------------------------

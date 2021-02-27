@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="traffic_light.css">
+</head>
+<body>
+
+  <button onclick="start()">
+    Start
+  </button>
+  <button onclick="stop()">
+    Stop
+  </button>
+  <div id="timer">Time: <span></span></div>
+
+  <div id="trafficLights">
+    <svg height="100" width="100" class="firstLight">
+      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="white" />
+    </svg>
+
+    <svg height="100" width="100" class="secondLight">
+      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="white" />
+    </svg>
+
+    <svg height="100" width="100" class="thirdLight">
+      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="white" />
+    </svg>
+  </div>
+
+  <script>
+    
+    setInterval( startTimer, 1000);
+    function startTimer(){
+      var d = new Date();
+      var n = d.toLocaleTimeString();
+      document.querySelector("#timer span").textContent = n
+    }
+    
+    function start(){
+      setTimeout( changeColor, 5000 );
+    }
+
+    function stop(){
+      location.reload()
+    }
+
+    function changeColor(){
+      console.log("getting chat messages")
+      document.querySelector(".firstLight circle").setAttribute("fill", "red");
+      setTimeout( addYellow, 2000 );
+    } 
+    
+    function addYellow(){
+      document.querySelector(".secondLight circle").setAttribute("fill", "yellow");
+      setTimeout( makeGreen, 5000 );
+    }
+    
+    function makeGreen(){
+      document.querySelector(".firstLight circle").setAttribute("fill", "white");
+      document.querySelector(".secondLight circle").setAttribute("fill", "white");
+      document.querySelector(".thirdLight circle").setAttribute("fill", "green");
+      setTimeout( makeYellow, 2000 );
+
+    }
+
+    function makeYellow(){
+      document.querySelector(".firstLight circle").setAttribute("fill", "white");
+      document.querySelector(".secondLight circle").setAttribute("fill", "yellow");
+      document.querySelector(".thirdLight circle").setAttribute("fill", "white");
+      setTimeout( makeYellow, 2000 );
+    }
+
+  </script>
+
+</body>
+</html>

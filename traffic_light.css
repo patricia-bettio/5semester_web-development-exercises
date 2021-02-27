@@ -1,0 +1,9 @@
+#trafficLights {
+    display: grid;
+    place-content: center;
+}
+
+#timer {
+    font-size: 30px;
+    text-align: center;
+}
