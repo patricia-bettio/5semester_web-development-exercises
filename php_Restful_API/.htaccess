@@ -11,3 +11,5 @@ RewriteRule ^users/delete$ api-delete-user.php [NC,L]
 
 RewriteCond %{REQUEST_METHOD} POST
 RewriteRule ^users/update$ api-update-user.php [NC,L]
+
+ErrorDocument 404 /error.php
