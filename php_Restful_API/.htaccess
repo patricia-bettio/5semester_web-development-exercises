@@ -1,0 +1,13 @@
+RewriteEngine On
+# users
+RewriteCond %{REQUEST_METHOD} GET
+RewriteRule ^users$ api-get-users.php [NC,L]
+
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^users$ api-create-user.php [NC,L]
+
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^users/delete$ api-delete-user.php [NC,L]
+
+RewriteCond %{REQUEST_METHOD} POST
+RewriteRule ^users/update$ api-update-user.php [NC,L]
